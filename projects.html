@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Charlie Cochrane</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/button.css" rel="stylesheet">
+	
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+	
+	<link href='http://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+	
+	<style>
+		.center-block {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+		body {
+			margin-bottom: 60px;
+		}
+		#footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 60px;
+			background-color: #2c3e50;
+		}
+	</style>
+</head>
+ 
+ 
+<body>
+	<nav class="navbar-fixed-top" role="navigation" style="background-color:#2c3e50;">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<p style="text-align:center;font-size: 32px;margin-bottom: 0px;">
+					<a href="http://www.charlescochrane.com" hreflang="en" title="Charlie Cochrane" type="text/html" style="color:white;font-family: 'Fira Mono', sans serif;">
+					Charlie Cochrane
+					</a>
+				</p>
+			</div>
+			
+			<div class="col-md-6 col-sm-12 col-xs-12 text-center">
+				<a href="index.html">
+				<button href="#" class="btn btn-lg hvr-bounce-to-top" style="width: 100px; height: 47px; font-size: 14px; font-weight: bold;outline: 0;border-radius:0;">
+				About</button></a>
+				<button href="#" class="btn btn-lg" style="width: 100px; height: 47px; font-size: 14px;font-weight: bold;outline: 0;border-radius:0; color: #2c3e50;background: #FFFFFF;">
+				Projects</button>
+				<a href="contact.html">
+				<button href="#" class="btn btn-lg hvr-bounce-to-top" style="width: 100px; height: 47px; font-size: 14px;font-weight: bold;outline: 0;border-radius:0;">
+				Contact</button></a>
+			</div>
+		</div>	
+	</nav>
+ 
+	<!-- Nav bar size allowance -->
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height: 70px;">
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height: 40px;">
+		</div>
+	</div>
+	
+	<!-- Main Body -->
+	<div class="container" style="padding: 0px 15px 0;">
+  
+
+    
+		<div class="row">
+			<div class="col-md-12">	
+			<H4 class="text-center" style="font-weight: bold;">Some of my finished and in progress projects, please click on the titles for more info. Code also available on <a href="https://github.com/Charlesworth">GitHub</a>.</H4>  
+			<br>
+			<div class="panel-group" id="accordion">
+<!------------------------------------------------------------------------------------------------------------------>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+					
+						Cayley 1: Autonomous Quad Rotor Helicopter 
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">Robotics</span>
+						<span class="label label-primary">C/C++</span>
+						<span class="label label-primary">PCB</span>
+						<span class="label label-primary">PID</span>
+						<span class="label label-success">Complete</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse1" class="panel-collapse collapse in">
+			<div class="panel-body">
+				
+				<div class="col-sm-9 col-xs-12"> 
+					Cayley 1 is a home made, low cost quad rotor helicopter, capable
+					of autonomous flight. It is controlled wireless by an operator
+					using Zigbee wireless comms. It&apos;s self stabilising, using an IMU
+					to balance itself in the air and features a servo arm mounted
+					ultrasonic sensor for distance measurements of its surroundings.
+					I wrote all of the flight control software and designed and built
+					the aircraft&apos;s PCB myself.
+				</div> 		
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+					<dt>Links</dt>
+					<dd><a href="https://github.com/Charlesworth/Cayley1_Flight_Controller">GitHub</a></dd>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!------------------------------------------------------------------------------------------------------------------>  
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+					
+						ALBot: Musical toy with FPGA based machine vision
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">VHDL</span>
+						<span class="label label-primary">C</span>
+						<span class="label label-primary">Machine Vision</span>
+						<span class="label label-success">Complete</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse2" class="panel-collapse collapse">
+			<div class="panel-body">
+				
+				<div class="col-sm-9 col-xs-12"> 
+					ALBot is a moving, musical toy that responds to colours and lines 
+					in it environment. An FPGA was used to produce rudimentary machine
+					vision, able to detect when a certain colour is present in the
+					frame and what colour that is. It can also follow black lines on
+					the floor. Using its colour and line detection, ALBot will move
+					around and produce music. ALBot also has stuffed plush exterior
+					to make it a bit more child friendly and awesome looking!
+				</div> 		
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+					<dt>Links</dt>
+					<dd><a href="https://github.com/Charlesworth/AlbotGitHub">GitHub</a></dd>
+
+				</div>
+			</div>
+		</div>
+	</div>
+  
+<!------------------------------------------------------------------------------------------------------------------>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+					
+						MADapp: Intel's "Medfeild Android Development" app
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">Java</span>
+						<span class="label label-primary">Android</span>
+						<span class="label label-primary">Testing</span>
+						<span class="label label-success">Complete</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse3" class="panel-collapse collapse">
+			<div class="panel-body">
+				
+				<div class="col-sm-9 col-xs-12"> 
+					The &quot;Medfield Android Development application&quot; was produced as a
+					testing and verification application for Intel and its partner&apos;s
+					android devices. This was a side project that I took initiative on
+					during my employment with Intel. As Intel owns the app, I can&apos;t
+					share the code ect, but feel free to ask me about the application
+					and my Android app development.
+				</div> 		
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+				
+					<dt>Links</dt>
+					<dd>I can't share code,</dd>
+					<dd>but can demo!</dd>
+
+				</div>
+			</div>
+		</div>
+	</div>  
+  
+<!------------------------------------------------------------------------------------------------------------------>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+					
+						Portfolio Website: This beautiful website!
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">HTML5/CSS3</span>
+						<span class="label label-primary">Bootstrap</span>
+						<span class="label label-success">Complete</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse4" class="panel-collapse collapse">
+			<div class="panel-body row">
+				
+				<div class="col-sm-9 col-xs-12"> 
+				A lightweight portfolio website design by me, using Bootstrap (a popular 
+				front-end framework) the website can dynamically resize, looking great
+				on any size of screen. Also my pride and joy: button animations! You are currently
+				on the very website this project is describing!
+				</div> 		
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+					<dt>Links</dt>
+					<dd><a href="https://github.com/Charlesworth/myWebsite">GitHub</a></dd>
+
+				</div>
+			</div>
+		</div>
+	</div>      
+  
+<!------------------------------------------------------------------------------------------------------------------>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+					
+						Static Website Generator
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">Ruby</span>
+						<span class="label label-primary">HTML5/CSS3</span>
+						<span class="label label-warning">Working but Stagnant</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse5" class="panel-collapse collapse">
+			<div class="panel-body">
+				
+				<div class="col-sm-9 col-xs-12"> 
+					I haven't thought of a great name for this one yet! This is a
+					Ruby based website generator, where anyone can input a text file
+					formatted with some tags (e.g picture, header, ect.) and SSG will
+					output a beautiful website. Its working but needs finishing, some
+					of the extra features are in the GitHub issues list ATM. Currently
+					works though, outputting a beautiful and dynamically resizeable website.
+				</div> 		
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+					<dt>Links</dt>
+					<dd><a href="https://github.com/Charlesworth/SSG">GitHub</a></dd>
+
+				</div>
+			</div>
+		</div>
+	</div>  
+  
+<!------------------------------------------------------------------------------------------------------------------>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+					
+						Voting Webservice: Java w/ Akka PoC backend
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">Java</span>
+						<span class="label label-primary">Akka</span>
+						<span class="label label-primary">InfluxDB</span>
+						<span class="label label-success">PoC</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse6" class="panel-collapse collapse">
+			<div class="panel-body">
+				
+				<div class="col-sm-9 col-xs-12"> 
+					This was a proof of concept (PoC) for the backend of my voting
+					webservice. It is written in Java and leveraged the excellent Akka actor
+					library, making the whole thing upward and outwardly scalable, with
+					each HTTP request making a new actor handler. I dropped in the second
+					iteration for the Go language instead, but I will definitely come back and
+					use Akka for something again!
+				</div> 		
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+					<dt>Links</dt>
+					<dd><a href="https://github.com/Charlesworth/jVoter">GitHub</a></dd>
+
+				</div>
+			</div>
+		</div>
+	</div>  
+  
+<!------------------------------------------------------------------------------------------------------------------>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+					
+						Voting Webservice: Go and InfluxDB backend
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">Go</span>
+						<span class="label label-primary">InfluxDB</span>
+						<span class="label label-primary">2nd iteration</span>
+						<span class="label label-warning">WiP</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse7" class="panel-collapse collapse">
+			<div class="panel-body">
+				
+				<div class="col-sm-9 col-xs-12"> 
+					So I dropped Java and started using GoLang for the second iteration of the
+					voter backend. Go has been a real joy to learn, and its really fast, its like 
+					slightly slower C with garbage collection. This is still work in progress, but
+					basically will spin up a new GoRoutine to handle each HTTP API call.
+				</div> 		
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+					<dt>Links</dt>
+					<dd><a href="https://github.com/Charlesworth/goVoter">GitHub</a></dd>
+
+				</div>
+			</div>
+		</div>
+	</div>  
+  
+<!------------------------------------------------------------------------------------------------------------------>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+					
+						Voting Webservice: Frontend static website
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">HTML5/CSS3</span>
+						<span class="label label-warning">WiP</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse8" class="panel-collapse collapse">
+			<div class="panel-body">
+				
+				<div class="col-sm-9 col-xs-12"> 
+					The front end of the voting website. Although the backend is accessible via
+					an API, if I want people to use the service it needs a good-looking and easy
+					to use website. still working on this as the backend evolves so does this. Dat
+					resizeable background tho......
+				</div> 		
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+					<dt>Links</dt>
+					<dd><a href="https://github.com/Charlesworth/voterFrontend">GitHub</a></dd>
+
+				</div>
+			</div>
+		</div>
+	</div>  
+  
+<!------------------------------------------------------------------------------------------------------------------>
+
+</div>  
+  
+</div>
+
+
+			
+				</div>
+  
+		</div>
+
+	</div>
+
+
+	
+	
+	
+    <div id="footer">
+    <div class="container">
+		<br>
+		<h5 class="text-center" Style="color:#999;">Charlie Cochrane &copy; -
+		Built with <a href="http://getbootstrap.com/">Bootstrap</a>
+		<a href="mailto:cochrane26@gmail.com" Style="float:right;">Email Me</a></h5>
+	</div>
+    </div>
+ 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script> 
+   
+</body>
+</html>
