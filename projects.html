@@ -14,7 +14,7 @@
 	
 	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 	
-	<link href='http://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	
 	<style>
 		.center-block {
@@ -45,7 +45,7 @@
 		<div class="row">
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<p style="text-align:center;font-size: 32px;margin-bottom: 0px;">
-					<a href="http://www.charlescochrane.com" hreflang="en" title="Charlie Cochrane" type="text/html" style="color:white;font-family: 'Fira Mono', sans serif;">
+					<a href="http://www.charlescochrane.com" hreflang="en" title="Charlie Cochrane" type="text/html" style="color:white;font-family: 'Lobster', cursive;">
 					Charlie Cochrane
 					</a>
 				</p>
@@ -370,7 +370,7 @@
 						<span class="label label-primary">Go</span>
 						<span class="label label-primary">Redis</span>
 						<span class="label label-primary">2nd iteration</span>
-						<span class="label label-warning">WiP</span>
+						<span class="label label-success">Complete</span>
 
 					</div>
 				</div>
@@ -383,8 +383,8 @@
 				<div class="col-sm-9 col-xs-12"> 
 					So I dropped Java and started using GoLang for the second iteration of the
 					voter backend. Go has been a real joy to learn, and its really fast with Redis,
-					its like slightly slower C with garbage collection. This is still work in progress,
-					but	basically will spin up a new GoRoutine to handle each HTTP API call.
+					its like slightly slower C with garbage collection. Basically will spin up a new 
+					GoRoutine to handle each HTTP API call, go to the GitHub readme for Docs.
 				</div> 		
 
 				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
@@ -404,14 +404,16 @@
 				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
 					
-						Voting Webservice: Frontend static website
+						VisCount: Webpage view counter
 						
 					</a>
 				</div>
 				<div class="col-sm-6 col-xs-12">
 					<div style="float:right;">
 
-						<span class="label label-primary">HTML5/CSS3</span>
+						<span class="label label-primary">Go</span>
+						<span class="label label-primary">HTTP</span>
+						<span class="label label-primary">BoltDB</span>
 						<span class="label label-warning">WiP</span>
 
 					</div>
@@ -423,15 +425,57 @@
 			<div class="panel-body">
 				
 				<div class="col-sm-9 col-xs-12"> 
-					The front end of the voting website. Although the backend is accessible via
-					an API, if I want people to use the service it needs a good-looking and easy
-					to use website. still working on this as the backend evolves so does this. Dat
-					resizeable background tho......
-				</div> 		
+					Easy and informative page view counter for static websites. you put a small tag on
+					a static or dynamic page and each time the page is loaded, it send information to the
+					VisCount server on the IP address and visit number. Uses the embedded BoltDB, which by the way
+					is excellent. WIP: want to get some interesting analytic and OAuth support.
+				</div>
 
 				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
 					<dt>Links</dt>
-					<dd><a href="https://github.com/Charlesworth/voterFrontend">GitHub</a></dd>
+					<dd><a href="https://github.com/Charlesworth/VisCount">GitHub</a></dd>
+
+				</div>
+			</div>
+		</div>
+	</div>  
+  
+<!------------------------------------------------------------------------------------------------------------------>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title row row-centered" style="padding-left:6px;padding-right:6px;">
+				<div class="col-sm-6 col-xs-12" style="padding-bottom:4px;padding-top:4px;">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+					
+						Pub/Sub Server
+						
+					</a>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div style="float:right;">
+
+						<span class="label label-primary">Go</span>
+						<span class="label label-primary">Reddis</span>
+						<span class="label label-primary">BoltDB</span>
+						<span class="label label-warning">WiP</span>
+
+					</div>
+				</div>
+			</h4>
+		</div>
+		
+		<div id="collapse9" class="panel-collapse collapse">
+			<div class="panel-body">
+				
+				<div class="col-sm-9 col-xs-12"> 
+					A Publish/Subscribe HTTP API Server. Early at the moment but am implementing a
+					database interface so any key/store or DB can be used.
+				</div>
+
+				<div class="col-sm-3 col-xs-12 text-center" style="padding-top:6px;">
+					<dt>Links</dt>
+					<dd><a href="https://github.com/Charlesworth/pubSubServer">GitHub</a></dd>
 
 				</div>
 			</div>
