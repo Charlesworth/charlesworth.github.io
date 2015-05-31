@@ -1,111 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Charlie Cochrane</title>
+  <meta name="description" content="Charles Cochrane's Personal Website and Blog">
+  <meta name="author" content="Charles Cochrane">
+  <link rel="icon" href="img/favicon.png">
 
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/button.css" rel="stylesheet">
+  <title>Charles Cochrane</title>
 
-	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/button.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-
-	<style>
-		.center-block {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		html {
-			position: relative;
-			min-height: 100%;
-		}
-		body {
-			margin-bottom: 60px;
-		}
-		#footer {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			height: 60px;
-			background-color: #2c3e50;
-		}
-		i{
-		    color: #2c3e50;
-		}
-		i:visited {
-		    color: #428BCA;
-		}
-		i:hover {
-		    color: #428BCA;
-		}
-		i:active {
-		    color: #428BCA;
-		}
-	</style>
+  <style>
+    .center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    html {
+      position: relative;
+      min-height: 100%;
+    }
+    body {
+      margin-bottom: 60px;
+    }
+    #footer {
+      background-color: #2c3e50;
+    }
+    i{
+        color: white;
+        margin: 4px;
+    }
+    i:visited {
+        color: #428BCA;
+    }
+    i:hover {
+        color: #428BCA;
+    }
+    i:active {
+        color: #428BCA;
+    }
+  </style>
 </head>
 
-
 <body>
+  <!-- Fixed navbar -->
+  <nav class="navbar-fixed-top" style="background-color:#2c3e50;">
+    <div class="container">
+      <div class="row">
+  			<div class="col-md-6 col-sm-12 col-xs-12">
+  				<p style="text-align:center;font-size: 32px;margin-bottom: 0px;">
+  					<a href="http://www.charlescochrane.com" hreflang="en" title="Charlie Cochrane" type="text/html" style="color:white;font-family: 'Lobster', cursive;">
+              <i class="fa fa-male"></i>(Charlie Cochrane) + <i class="fa fa-keyboard-o"></i> = <i class="fa fa-code"></i>
 
-	<!-- Navigation title bar -->
-	<nav class="navbar-fixed-top" role="navigation" style="background-color:#2c3e50;">
-		<div class="row">
-			<div class="col-md-6 col-sm-12 col-xs-12">
-				<p style="text-align:center;font-size: 32px;margin-bottom: 0px;">
-					<a href="http://www.charlescochrane.com" hreflang="en" title="Charlie Cochrane" type="text/html" style="color:white;font-family: 'Lobster', cursive;">
-					Charlie Cochrane
-					</a>
-				</p>
-			</div>
+  					</a>
+  				</p>
+  			</div>
 
-			<div class="col-md-6 col-sm-12 col-xs-12 text-center">
-				<button href="#" class="btn btn-lg" style="width: 100px; height: 47px; font-size: 14px; font-weight: bold;outline: 0;border-radius:0;color: #2c3e50;background: #FFFFFF;">
-				About</button>
-				<a href="projects.html">
-				<button href="projects.html" class="btn btn-lg hvr-bounce-to-top" style="width: 100px; height: 47px; font-size: 14px;font-weight: bold;outline: 0;border-radius:0;">
-				Projects</button></a>
-				<a href="posts.html">
-				<button href="posts.html" class="btn btn-lg hvr-bounce-to-top" style="width: 100px; height: 47px; font-size: 14px;font-weight: bold;outline: 0;border-radius:0;">
-				Blog</button></a>
-			</div>
-		</div>
-	</nav>
+  			<div class="col-md-6 col-sm-12 col-xs-12 text-center">
+  				<button href="#" class="btn btn-lg" style="width: 100px; height: 47px; font-size: 14px; font-weight: bold;outline: 0;border-radius:0;color: #2c3e50;background: #FFFFFF;">
+  				About</button>
+  				<a href="projects.html">
+  				<button href="projects.html" class="btn btn-lg hvr-bounce-to-top" style="width: 100px; height: 47px; font-size: 14px;font-weight: bold;outline: 0;border-radius:0;">
+  				Projects</button></a>
+  				<a href="posts.html">
+  				<button href="posts.html" class="btn btn-lg hvr-bounce-to-top" style="width: 100px; height: 47px; font-size: 14px;font-weight: bold;outline: 0;border-radius:0;">
+  				Blog</button></a>
+  			</div>
+  		</div>
+    </div>
+  </nav>
 
-	<!-- Nav bar size allowance -->
-	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height: 55px;">
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="height: 55px;">
-		</div>
-	</div>
+  <!-- Content body-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="height: 20px;"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="height: 20px;"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="height: 20px;"></div>
+    </div>
 
-	<!-- Main Body -->
-	<div class="container" style="padding: 0px 15px 0;">
-		<div class="panel-body">
+    <div class="row row-centered">
+      <div class="col-md-5">
+        <img data-src="holder.js/140x140"
+        class="img-rounded center-block img-responsive" alt="140x140"
+        src="img/me.jpg">
+      </div>
 
-		<div class="row row-centered">
-			<div class="col-md-5">
-				<img data-src="holder.js/140x140"
-				class="img-rounded center-block img-responsive" alt="140x140"
-				src="me.jpg">
-			</div>
-
-			<div class="col-md-7">
-				<br>
-				<p class="text-center" style="font-weight: bold;"> Hello and welcome to my personal website.
-				I'm a software engineer working on the IBM container service
-        (available on
-				<a href="http://www.bluemix.net">Bluemix</a>),
+      <div class="col-md-7">
+        <br>
+        <p class="text-center" style="font-weight: bold;"> Hello and welcome to my personal website.
+        I'm a software engineer working on the IBM container service (available on
+        <a href="http://www.bluemix.net">Bluemix</a>),
         IBM's cloud hosting service for your
         <a href="http://www.docker.com">Docker</a>
         containers.
@@ -113,168 +105,132 @@
         <br>
         <br>
 
-        I also do a lot of software development and
-        robotic design in my free	time, some of which is viewable on my
-				<a href="projects.html">Projects</a>
-				page or via my
-        <a href="https://github.com/Charlesworth">GitHub</a>
-        account. My CV is viewable from the link below; I am always open to new
-        opportunities and interesting ideas, so please
-        <A HREF="#Contact">Get in Touch.</A>
-        Thanks for visiting!</p>
+        I do lots of software and hardware projects in my free time, which are viewable on the
+        <a href="projects.html">Projects</a>
+        page or on
+        <a href="https://github.com/Charlesworth">GitHub</a>.
+        My CV and
+        <A HREF="#Contact">Contact Details</A>
+        are linked below, I'm always open to new opportunities. Thanks for visiting!</p>
 
-				<br>
+        <br>
 
-				<div class="text-center">
-					<!-- <a href="https://drive.google.com/file/d/0B8LJwIBweh1ba3FDTDlHOEI3Rk0/edit?usp=sharing"> -->
-					<a href="CVCharlesCochrane.pdf">
-					<button href="contact.html" class="btn btn-lg hvr-bounce-to-top" style="width: 200px; height: 47px; font-size: 14px;font-weight: bold;outline: 0;border-radius:0;">
-					Go to Charlie's CV</button></a>
-				</div>
-			</div>
-		</div>
+        <div class="text-center">
+          <a href="CVCharlesCochrane.pdf">
+          <button href="contact.html" class="btn btn-lg hvr-bounce-to-top" style="width: 200px; height: 47px; font-size: 14px;font-weight: bold;outline: 0;border-radius:0;">
+          Go to Charlie's CV</button></a>
+        </div>
+      </div>
+    </div>
 
-		<br>
 		<hr>
 
-		<div class="panel-body">
-			<div class="row">
-				<div class="col-md-3 col-sm-12 text-center">
-					<div class="row">
-						<div class="col-md-12 col-sm-1 col-xs-1" style="margin-bottom:36px;">
-						</div>
-						<div class="col-md-12 col-sm-10 col-xs-10 text-center">
-						<h2 class="text-center" style="margin-top:0px;">My Tools</h2>
-						</div>
-						<div class="col-md-12 col-sm-1 col-xs-1" style="margin-bottom:36px;">
-						</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-12 text-center">
+				<div class="row">
+					<div class="col-md-12 col-sm-1 col-xs-1" style="margin-bottom:33px;">
+					</div>
+					<div class="col-md-12 col-sm-10 col-xs-10 text-center">
+					<h2 class="text-center" style="margin-top:0px;">My Tools</h2>
+					</div>
+					<div class="col-md-12 col-sm-1 col-xs-1" style="margin-bottom:22px;">
 					</div>
 				</div>
+			</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-4 text-center">
-					<dt>Languages</dt>
-					<dd>Go</dd>
-					<dd>Java</dd>
-					<dd>Ruby</dd>
-					<dd>Node.js</dd>
-					<br>
-				</div>
+			<div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				<dt>Languages</dt>
+				<dd>Go</dd>
+				<dd>Java</dd>
+				<dd>Ruby</dd>
+				<dd>Node.js</dd>
+			</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-4 text-center">
-					<dt>Databases</dt>
-          <dd>SQL</dd>
-					<dd>Redis</dd>
-					<dd>BoltDB</dd>
-					<dd>MongoDB</dd>
-          <br>
-				</div>
+			<div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				<dt>Databases</dt>
+        <dd>SQL</dd>
+				<dd>Redis</dd>
+				<dd>BoltDB</dd>
+				<dd>MongoDB</dd>
+			</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-4 text-center">
-					<dt>Tools</dt>
-          <dd>Docker</dd>
-					<dd>Git/Gerrit</dd>
-					<dd>Jenkins/ELK</dd>
-					<dd>Cloud Foundry</dd>
-					<br>
-				</div>
+			<div class="col-md-3 col-sm-4 col-xs-4 text-center">
+				<dt>Tools</dt>
+        <dd>Docker</dd>
+				<dd>Git/Gerrit</dd>
+				<dd>Jenkins/ELK</dd>
+				<dd>Cloud Foundry</dd>
 			</div>
 		</div>
 
-		<hr>
+    <hr>
 
-		<div class="panel-body">
-			<h3 class="text-center" style="margin-top:0px;">Showcase Projects</h3>
+		<h3 class="text-center" style="margin-top:0px;">Showcase Projects</h3>
 
-			<div class="row">
-				<div class="col-md-4 col-sm-4 col-xs-12">
-				<div class="well well-sm">
-					<dt class="text-center">Cayley 1</dt>
-					<img data-src="holder.js/140x140"
-					class="img-circle center-block" alt="120x120"
-					src="5.jpg"
-					style="width: 120px; height: 120px;padding-bottom:5px;">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+  			<div class="well well-sm">
+  				<dt class="text-center">Cayley 1</dt>
+  				<img data-src="holder.js/140x140"
+  				class="img-circle center-block" alt="120x120"
+  				src="img/5.jpg"
+  				style="width: 120px; height: 120px;padding-bottom:5px;">
 
-					<p class="text-center">
-					An autonomous quad rotor helicopter built from scratch
-					with my own flight control software.</p>
-				</div>
-				</div>
+  				<p class="text-center">
+  				An autonomous quad rotor helicopter built from scratch
+  				with my own flight control software.</p>
+  			</div>
+			</div>
 
-				<div class="col-md-4 col-sm-4 col-xs-12">
-				<div class="well well-sm">
-					<dt class="text-center">AlBot</dt>
-					<img data-src="holder.js/140x140"
-					class="img-circle center-block" alt="120x120"
-					src="2.jpg"
-					style="width: 120px; height: 120px;padding-bottom:5px;">
-					<p class="text-center">
-					A toy able to visually follow objects and produce music based
-					on its surroundings using a FPGA.</p>
-				</div>
-				</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+  			<div class="well well-sm">
+  				<dt class="text-center">AlBot</dt>
+  				<img data-src="holder.js/140x140"
+  				class="img-circle center-block" alt="120x120"
+  				src="img/2.jpg"
+  				style="width: 120px; height: 120px;padding-bottom:5px;">
+  				<p class="text-center">
+  				A toy able to visually follow objects and produce music based
+  				on its surroundings using a FPGA.</p>
+  			</div>
+			</div>
 
-				<div class="col-md-4 col-sm-4 col-xs-12">
-				<div class="well well-sm">
-					<dt class="text-center">MADapp</dt>
-						<img data-src="holder.js/140x140"
-						class="img-circle center-block" alt="120x120"
-						src="4.jpg"
-						style="width: 120px; height: 120px;padding-bottom:5px;">
-						<p class="text-center">
-						An Android platform diagnostic app built for Intel to
-						analyse and test x86 architecture android devices.</p>
-				</div>
-				</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+  			<div class="well well-sm">
+  				<dt class="text-center">MADapp</dt>
+  					<img data-src="holder.js/140x140"
+  					class="img-circle center-block" alt="120x120"
+  					src="img/4.jpg"
+  					style="width: 120px; height: 120px;padding-bottom:5px;">
+  					<p class="text-center">
+  					An Android platform diagnostic app built for Intel to
+  					analyse and test x86 architecture android devices.</p>
+  			</div>
 			</div>
 		</div>
-
-		<hr>
-
-		<div class="panel-body">
-      <A NAME="Contact"></A>
-			<div class="row">
-
-        <div class="col-md-3 col-sm-12">
-          <h2 class="text-center" style="margin-top:10px">Contact Me</h2>
-        </div>
-
-        <div class="col-md-3 col-sm-12 text-center">
-          <p style="font-weight:bold;margin-top:7px;">
-					Email:<a href="mailto:cochrane26@gmail.com">cochrane26@gmail.com</a>
-          <br>
-					Work:<a href="mailto:charcoch@uk.ibm.com">charcoch@uk.ibm.com</a>
-          </p>
-				</div>
-
-        <div class="col-md-3 col-sm-6 text-center">
-					<a href="http://uk.linkedin.com/in/charlescochrane/"><i class="fa fa-linkedin-square fa-4x"></i></a>
-					<a href="https://twitter.com/SomersetCharlie"><i class="fa fa-twitter-square fa-4x"></i></a>
-					<a href="https://github.com/Charlesworth"><i class="fa fa-github-square fa-4x"></i></a>
-					<a href="https://www.facebook.com/charlie.cochrane.33"><i class="fa fa-facebook-square fa-4x"></i></a>
-        </div>
-
-				<div class="col-md-3 col-sm-6 text-center">
-				  <a href="http://steamcommunity.com/id/cafc"><img src="http://steamsignature.com/status/english/76561198002554154.png" alt="" title="" style="margin-top:5px;"/></a>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-
-	<!-- Sticky Footer -->
-  <div id="footer">
-  	<!-- <div class="container"> -->
-			<br>
-			<h5 class="text-center" Style="color:#999;">Charlie Cochrane &copy; -
-			Built with <a href="http://getbootstrap.com/">Bootstrap</a></h5>
-		<!-- </div> -->
   </div>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+  <!-- Sticky Footer -->
+  <footer class="footer" id="footer" style="height:66px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12"></div>
+        <div class="col-md-6 col-sm-12 text-center">
+          <a href="mailto:cochrane26@gmail.com"><i class="fa fa-envelope-square fa-4x"></i></a>
+          <a href="http://uk.linkedin.com/in/charlescochrane/"><i class="fa fa-linkedin-square fa-4x"></i></a>
+  				<a href="https://twitter.com/SomersetCharlie"><i class="fa fa-twitter-square fa-4x"></i></a>
+  				<a href="https://github.com/Charlesworth"><i class="fa fa-github-square fa-4x"></i></a>
+  				<a href="https://www.facebook.com/charlie.cochrane.33"><i class="fa fa-facebook-square fa-4x"></i></a>
+          <a href="http://steamcommunity.com/id/cafc"><i class="fa fa-steam-square fa-4x"></i></a>
+        </div>
+        <div class="col-md-3 col-sm-0"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
