@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/charlesworth
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://charlescochrane.com
+  * I am charlesworth (https://keybase.io/charlesworth) on keybase.
+  * I have a public key ASBlezeD3uBRga8dc-0G2gYVPt94i5DwjFjUN7nulHWMmAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201a8fa1a5578d1108bc18935bef92dfd40d8cc74f5c01e38855caa605cc7593b50a",
+      "host": "keybase.io",
+      "kid": "0120657b3783dee05181af1d73ed06da06153edf788b90f08c58d437b9ee94758c980a",
+      "uid": "a17a1f403adbe42fd827af813dc74119",
+      "username": "charlesworth"
+    },
+    "merkle_root": {
+      "ctime": 1507489399,
+      "hash": "c386ad93789e8d124312e2194d1b6fe2ac95f241713dd9433e9baba22329603c20257e1fa22edafc4c9307150191321dd6bb73e2d4fd88062a8d572a493108b5",
+      "hash_meta": "2a969e97008eb7278eb5146d806aa55f8de7846e4fbb59abe3117b472d2e4bb8",
+      "seqno": 1541011
+    },
+    "service": {
+      "hostname": "charlescochrane.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.34"
+  },
+  "ctime": 1507489435,
+  "expire_in": 504576000,
+  "prev": "d361a27e66e6277f1c5690434dc82da3424866d72a145b364bea775aaef57557",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZXs3g97gUYGvHXPtBtoGFT7feIuQ8IxY1De57pR1jJgKp3BheWxvYWTFA097ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMWE4ZmExYTU1NzhkMTEwOGJjMTg5MzViZWY5MmRmZDQwZDhjYzc0ZjVjMDFlMzg4NTVjYWE2MDVjYzc1OTNiNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNjU3YjM3ODNkZWUwNTE4MWFmMWQ3M2VkMDZkYTA2MTUzZWRmNzg4YjkwZjA4YzU4ZDQzN2I5ZWU5NDc1OGM5ODBhIiwidWlkIjoiYTE3YTFmNDAzYWRiZTQyZmQ4MjdhZjgxM2RjNzQxMTkiLCJ1c2VybmFtZSI6ImNoYXJsZXN3b3J0aCJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwNzQ4OTM5OSwiaGFzaCI6ImMzODZhZDkzNzg5ZThkMTI0MzEyZTIxOTRkMWI2ZmUyYWM5NWYyNDE3MTNkZDk0MzNlOWJhYmEyMjMyOTYwM2MyMDI1N2UxZmEyMmVkYWZjNGM5MzA3MTUwMTkxMzIxZGQ2YmI3M2UyZDRmZDg4MDYyYThkNTcyYTQ5MzEwOGI1IiwiaGFzaF9tZXRhIjoiMmE5NjllOTcwMDhlYjcyNzhlYjUxNDZkODA2YWE1NWY4ZGU3ODQ2ZTRmYmI1OWFiZTMxMTdiNDcyZDJlNGJiOCIsInNlcW5vIjoxNTQxMDExfSwic2VydmljZSI6eyJob3N0bmFtZSI6ImNoYXJsZXNjb2NocmFuZS5jb20iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM0In0sImN0aW1lIjoxNTA3NDg5NDM1LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImQzNjFhMjdlNjZlNjI3N2YxYzU2OTA0MzRkYzgyZGEzNDI0ODY2ZDcyYTE0NWIzNjRiZWE3NzVhYWVmNTc1NTciLCJzZXFubyI6MTgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAkPGIv5ultd8gyI2q4QhMgsPFwBgQEhKktsN1YFyA3ETwwpPU79JMin117v3mCaRTlQYqI+eyeBxkkJNab9HxC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOIPA555v6rJAHBwTRGKAkvjLUar134JRE/5d+Hz9Q9lo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/charlesworth
+
+==================================================================
