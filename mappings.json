@@ -1,29 +1,29 @@
 {
     "file-paths":[
         {
-            "file":"charlesworth.github.io/index.html",
+            "file":"index.html",
             "path":"/index.html"
         },
         {
-            "file":"charlesworth.github.io/me.jpg",
+            "file":"me.jpg",
             "path":"/me.jpg"
         },
         {
-            "file":"charlesworth.github.io/favicon.png",
+            "file":"favicon.png",
             "path":"/favicon.png"
         },
         {
-            "file":"charlesworth.github.io/CVCharlesCochrane.pdf",
+            "file":"CVCharlesCochrane.pdf",
             "path":"/CVCharlesCochrane.pdf"
         },
         {
-            "file":"charlesworth.github.io/keybase.txt",
+            "file":"keybase.txt",
             "path":"/keybase.txt"
         }
     ],
     "push-file-paths":[
         {
-            "file":"charlesworth.github.io/index.html",
+            "file":"index.html",
             "path":"/",
             "push-paths":[
                 "/me.jpg"
