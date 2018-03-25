@@ -6,12 +6,6 @@ body {
     font-weight: 400;
 }
 
-h1,
-h2,
-h3 {
-    margin: 0 0 20px;
-}
-
 p {
     margin: 0 0 20px;
 }
@@ -19,16 +13,13 @@ p {
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+    margin: 0 0 20px;
+    line-height: 1;
+    font-weight: 500;
 }
 
 h1 {
     font-size: 28px;
-    font-weight: 500;
-}
-
-h2 {
-    font-weight: 500;
 }
 
 a {
@@ -78,13 +69,11 @@ screen and (max-width: 960px) {
     }
 
     header {
-        padding-right: 320px;
+        padding: 0;
     }
 
     section {
-        border: 1px solid #595959;
         border-width: 1px 0;
-        padding: 20px 0;
         margin: 0 0 20px;
     }
 }
@@ -93,10 +82,6 @@ screen and (max-width: 960px) {
 screen and (max-width: 720px) {
     body {
         word-wrap: break-word;
-    }
-
-    header {
-        padding: 0;
     }
 
     header p.view {
@@ -117,4 +102,8 @@ screen and (max-width: 480px) {
         font-size: 12pt;
         color: #444;
     }
+}
+
+pre {
+    background: #c5c5c5;
 }

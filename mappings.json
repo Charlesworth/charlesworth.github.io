@@ -19,6 +19,14 @@
         {
             "file":"keybase.txt",
             "path":"/keybase.txt"
+        },
+        {
+            "file":"style.css",
+            "path":"/style.css"
+        },
+        {
+            "file":"test-article.html",
+            "path":"/test-article"
         }
     ],
     "push-file-paths":[
