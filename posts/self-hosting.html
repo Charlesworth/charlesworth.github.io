@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Charlie Cochrane</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Charles Cochrane's Personal Website and Blog">
+    <meta name="author" content="Charles Cochrane">
+    <link rel="icon" href="../images/favicon.png">
+    <style>
+        h1,h2,h3,p{margin:0 0 20px}body{background-color:linen;padding:50px;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";color:#767676;font-weight:400}h1,h2,h3{line-height:1;font-weight:500}h1{font-size:28px}a{color:#39c;text-decoration:none}a:hover{color:#069}.wrapper{width:860px;margin:0 auto}img{max-width:100%}header{width:270px;float:left;position:fixed;-webkit-font-smoothing:subpixel-antialiased}section{width:500px;float:right;padding-bottom:50px}@media print,screen and (max-width:960px){div.wrapper{width:auto;margin:0}header,section{float:none;position:static;width:auto}header{padding:0}section{border-width:1px 0;margin:0 0 20px}}@media print,screen and (max-width:720px){body{word-wrap:break-word}header p.view{position:static}}@media print,screen and (max-width:480px){body{padding:15px}}@media print{body{padding:.4in;font-size:12pt;color:#444}}pre{background:#c5c5c5}
+    </style>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <hr>
+            <h1><a href="https://ccochrane.com">Charlie Cochrane</a></h1>
+            <h3>software and game developer</h3>
+            <p>
+                <a href="mailto:cochrane26@gmail.com">cochrane26@gmail.com</a><br />
+                <a href="https://github.com/charlesworth">github.com/charlesworth</a><br />
+            </p>
+        </header>
+
+        <section>
+            <hr>
+
+            <h1>Self hosting with HTTPS and server push</h1>
+            <h3>02/04/18</h3>
+
+            <p>
+                After a few years of using GitHub pages to host my website, I decided to host it myself.
+                Not that GitHub pages isn’t a great free service, self hosting gives me some interesting options for improving my site including server push, HTTPS and in-memory file serving.
+                I wrote my own server that incorporates these features, source available <a href="https://github.com/Charlesworth/websiteServer">here</a>.
+            </p>
+
+            <h3>HTTPS for free with Let’s Encrypt:</h3>
+
+            <p> 
+                The majority of GitHub pages sites still use plain old HTTP, making it easy to snoop in on the traffic between those sites.
+                Adding HTTPS (S for Secure) to your website keeps things between you and your readers private.
+                Modern Browsers will shortly be makeing it more and more visible to users when a site is using “insecure” HTTP, not a good look:
+            </p>
+
+            <img src="../images/self-hosting-1.png" alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>
+
+            <p> 
+                Github Pages <a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">offers simple to use HTTPS for github.io domains</a> but not for custom domains.
+                Until recently you had to shell out $ for certificates to enable HTTPS, but now the fantastic <a href="https://letsencrypt.org/">Let’s Encrypt</a> enables you to get them for free.
+                You can even automate the process, in my case I used the <a href="https://godoc.org/golang.org/x/crypto/acme/autocert">Golang autocert package</a> which provides a autocert manager you can load into your server.
+            </p>                    
+
+            <img src="../images/self-hosting-3.png" style="width:100%;" alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>            
+
+            <p> 
+                Green padlock is best padlock.
+            </p>                    
+
+            <h3>Server push:</h3>
+            
+            <p>
+                A new feature implemented with HTTP2 is <a href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push">server push</a>.
+                This is where you preemptively send files that you think the current user will request, before they request them.
+            </p>
+                
+            <img src="../images/self-hosting-2.png" alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>
+
+            <p>
+                For example: a web page consists of a html file with an image and css file.
+                Usually a user would download the html, parse it to find the src links and then subsequently request the image and css, wasting time.
+                Server push sends all three during the initial html file request, saving time:
+            </p>
+
+            <h3>In memory static files:</h3>
+
+            <p>
+                For a small site like mine, keeping the entire website in memory doesn’t pose a massive problem but does offer increased speed as opposed to accessing the data from a disk or SSD.
+                By keeping all of the text files and pictures in memory, requests can be served that much faster.
+            </p>
+
+            <h3>Try it yourself:</h3>
+
+            <p>
+                I keep the site available via the <a href="http://charlesworth.github.io">old github pages github.io domain</a> as a good speed test for <a href="https://ccochrane.com">my new server</a>.
+                If you are running Chrome or Firefox, hit F12 and you can watch the network performance between the two.
+                Here's an example:
+            </p>
+
+            Github Pages HTTP
+            <img src="../images/self-hosting-4.png" style="width:100%;" alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>            
+            Self hosted HTTPS
+            <img src="../images/self-hosting-5.png" style="width:100%;" alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>                        
+
+            <br>
+            <br>
+
+            <p>
+                Thanks for reading.
+                If you're feeling generous please consider <a href="https://letsencrypt.org/donate/">making a donation to Let's Encrypt</a>.
+            </p>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
