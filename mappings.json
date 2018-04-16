@@ -5,12 +5,32 @@
             "path":"/index.html"
         },
         {
-            "file":"me.jpg",
-            "path":"/me.jpg"
+            "file":"images/me.jpg",
+            "path":"/images/me.jpg"
         },
         {
-            "file":"favicon.png",
-            "path":"/favicon.png"
+            "file":"images/favicon.png",
+            "path":"/images/favicon.png"
+        },
+        {
+            "file":"images/self-hosting-1.png",
+            "path":"/images/self-hosting-1.png"
+        },
+        {
+            "file":"images/self-hosting-2.png",
+            "path":"/images/self-hosting-2.png"
+        },
+        {
+            "file":"images/self-hosting-3.png",
+            "path":"/images/self-hosting-3.png"
+        },
+        {
+            "file":"images/self-hosting-4.png",
+            "path":"/images/self-hosting-4.png"
+        },
+        {
+            "file":"images/self-hosting-5.png",
+            "path":"/images/self-hosting-5.png"
         },
         {
             "file":"CVCharlesCochrane.pdf",
@@ -19,6 +39,14 @@
         {
             "file":"keybase.txt",
             "path":"/keybase.txt"
+        },
+        {
+            "file":"css/style.css",
+            "path":"/css/style.css"
+        },
+        {
+            "file":"posts/self-hosting.html",
+            "path":"/posts/self-hosting.html"
         }
     ],
     "push-file-paths":[
@@ -27,6 +55,17 @@
             "path":"/",
             "push-paths":[
                 "/me.jpg"
+            ]
+        },
+        {
+            "file":"posts/self-hosting.html",
+            "path":"/posts/self-hosting",
+            "push-paths":[
+                "/images/self-hosting-1.png",
+                "/images/self-hosting-2.png",
+                "/images/self-hosting-3.png",
+                "/images/self-hosting-4.png",
+                "/images/self-hosting-5.png"
             ]
         }
     ]
