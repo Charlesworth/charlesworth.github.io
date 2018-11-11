@@ -1,0 +1,44 @@
+
+# Instructions
+# $ sudo cp caddy.service /etc/systemd/system/
+# $ sudo systemctl stop caddy.service
+# $ sudo systemctl daemon-reload
+# $ sudo systemctl start caddy.service
+# $ sudo systemctl enable caddy.service # Enable on restart
+# $ journalctl -f -u caddy.service # Optional to see the logs
+
+[Unit]
+Description=Caddy HTTP/2 web server
+Documentation=https://caddyserver.com/docs
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Restart=on-abnormal
+
+; Letsencrypt-issued certificates will be written to this directory.
+Environment=CADDYPATH=/etc/ssl/caddy
+
+; Start command
+ExecStart=/usr/local/bin/caddy -log stdout -agree=true -conf=/home/root/charlesworth.github.io/Caddyfile -root=/home/root/charlesworth.github.io
+ExecReload=/bin/kill -USR1 $MAINPID
+
+; Use graceful shutdown with a reasonable timeout
+KillMode=mixed
+KillSignal=SIGQUIT
+TimeoutStopSec=5s
+
+; Limit the number of file descriptors.
+LimitNOFILE=1048576
+; Limit the number of Procs.
+LimitNPROC=512
+
+; Use a minimal /dev.
+PrivateDevices=true
+; Make /usr, /boot, /etc read-only.
+ProtectSystem=full
+; ^ except /etc/ssl/caddy, because we want Letsencrypt-certificates there.
+ReadWriteDirectories=/etc/ssl/caddy
+
+[Install]
+WantedBy=multi-user.target
