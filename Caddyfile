@@ -5,10 +5,10 @@ www.ccochrane.com. ccochrane.com {
 	ext .html
 	push /index.html {
 		/images/me.jpg
-		/images/favicon.png
+		/images/favicon.ico
 	}
 	push /posts/self-hosting.html {
-		/images/favicon.png
+		/images/favicon.ico
 		/images/self-hosting-1.png
 		/images/self-hosting-2.png
 		/images/self-hosting-3.png
