@@ -1,4 +1,4 @@
-www.ccochrane.com. ccochrane.com {
+www.ccochrane.com, ccochrane.com {
 	tls cochrane26@gmail.com {
 		ca https://acme-v02.api.letsencrypt.org/directory
 	}
