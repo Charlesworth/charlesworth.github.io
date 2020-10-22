@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Pragmatic Web Apps: Authentication</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Charles Cochrane&apos;s Personal Website and Blog">
+    <meta name="author" content="Charles Cochrane">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .boxed {
+            border: 1px solid green;
+            background-color: rgb(191, 226, 191);
+        }
+    </style>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <hr>
+            <h1><a href="/">Charlie Cochrane</a></h1>
+            <h3>A software, VR games and robotics person</h3>
+        </header>
+
+        <section>
+            <hr>
+
+            <h1>Pragmatic Web Apps: Authentication</h1>
+            <h3>25/10/20</h3>
+
+            <div class="boxed">
+                This article is a snippet of my upcoming book <b><a href="/">Pragmatic Web Apps</a></b>.<br />Interested in battle tested web app design decisions? I weigh build
+                speed, dev pain and later scalability to point you in the right direction.
+            </div>
+
+            <br />
+
+            <p>
+                Web app auth is a tricky subject. 
+            </p>
+
+            <p>
+                <b>TL:DR; Start with a simple Bearer token you generate, work up to using JWTs or third party auth providers when needed</b> 
+            </p>
+            
+
+            <h3>HTTPS for free with Let’s Encrypt:</h3>
+
+            <p>
+                The majority of GitHub pages sites still use plain old HTTP, making it easy to snoop in on the traffic
+                between those sites.
+                Adding HTTPS (S for Secure) to your website keeps things between you and your readers private.
+                Modern Browsers will shortly be makeing it more and more visible to users when a site is using
+                “insecure” HTTP, not a good look:
+            </p>
+
+            <img src="../images/self-hosting-1.png"
+                alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>
+
+            <p>
+                Github Pages <a
+                    href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">offers simple to
+                    use HTTPS for github.io domains</a> but not for custom domains.
+                Until recently you had to shell out $ for certificates to enable HTTPS, but now the fantastic <a
+                    href="https://letsencrypt.org/">Let’s Encrypt</a> enables you to get them for free.
+                You can even automate the process, in my case I used the <a
+                    href="https://godoc.org/golang.org/x/crypto/acme/autocert">Golang autocert package</a> which
+                provides a autocert manager you can load into your server.
+            </p>
+
+            <img src="../images/self-hosting-3.png" style="width:100%;"
+                alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>
+
+            <p>
+                Green padlock is best padlock.
+            </p>
+
+            <h3>Server push:</h3>
+
+            <p>
+                A new feature implemented with HTTP2 is <a
+                    href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push">server push</a>.
+                This is where you preemptively send files that you think the current user will request, before they
+                request them.
+            </p>
+
+            <img src="../images/self-hosting-2.png"
+                alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>
+
+            <p>
+                For example: a web page consists of a html file with an image and css file.
+                Usually a user would download the html, parse it to find the src links and then subsequently request the
+                image and css, wasting time.
+                Server push sends all three during the initial html file request, saving time:
+            </p>
+
+            <h3>In memory static files:</h3>
+
+            <p>
+                For a small site like mine, keeping the entire website in memory doesn’t pose a massive problem but does
+                offer increased speed as opposed to accessing the data from a disk or SSD.
+                By keeping all of the text files and pictures in memory, requests can be served that much faster.
+            </p>
+
+            <h3>Try it yourself:</h3>
+
+            <p>
+                I keep the site available via the <a href="http://charlesworth.github.io">old github pages github.io
+                    domain</a> as a good speed test for <a href="https://ccochrane.com">my new server</a>.
+                If you are running Chrome or Firefox, hit F12 and you can watch the network performance between the two.
+                Here's an example:
+            </p>
+
+            Github Pages HTTP
+            <img src="../images/self-hosting-4.png" style="width:100%;"
+                alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>
+            Self hosted HTTPS
+            <img src="../images/self-hosting-5.png" style="width:100%;"
+                alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>
+
+            <br>
+            <br>
+
+            <p>
+                Thanks for reading.
+                If you're feeling generous please consider <a href="https://letsencrypt.org/donate/">making a donation
+                    to Let's Encrypt</a>.
+            </p>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
