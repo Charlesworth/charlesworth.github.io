@@ -6,16 +6,15 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Charles Cochrane's Personal Website and Blog">
+    <meta name="description" content="Charles Cochrane&apos;s Personal Website and Blog">
     <meta name="author" content="Charles Cochrane">
-    <link rel="icon" href="../images/favicon.ico">
-    <style>
-        h1,h2,h3,p{margin:0 0 20px}body{background-color:linen;padding:50px;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";color:#767676;font-weight:400}h1,h2,h3{line-height:1;font-weight:500}h1{font-size:28px}a{color:#39c;text-decoration:none}a:hover{color:#069}.wrapper{width:860px;margin:0 auto}img{max-width:100%}header{width:270px;float:left;position:fixed;-webkit-font-smoothing:subpixel-antialiased}section{width:500px;float:right;padding-bottom:50px}@media print,screen and (max-width:960px){div.wrapper{width:auto;margin:0}header,section{float:none;position:static;width:auto}header{padding:0}section{border-width:1px 0;margin:0 0 20px}}@media print,screen and (max-width:720px){body{word-wrap:break-word}header p.view{position:static}}@media print,screen and (max-width:480px){body{padding:15px}}@media print{body{padding:.4in;font-size:12pt;color:#444}}pre{background:#c5c5c5}
-    </style>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js"></script>
     <meta name="viewport" content="width=device-width">
 </head>
 
-<body>
+<body onload="draw();">
     <div class="wrapper">
 
         <header>
@@ -31,24 +30,28 @@
             <h3>02/04/18</h3>
 
             <p>
+                <b>2020 update:</b> I&apos;m using <a href="https://netlify.com">Netlify</a> now and happily recommend it!
+            </p>
+
+            <p>
                 After a few years of using GitHub pages to host my website, I decided to host it myself.
-                Not that GitHub pages isn’t a great free service, self hosting gives me some interesting options for improving my site including server push, HTTPS and in-memory file serving.
+                Not that GitHub pages isn&apos;t a great free service, self hosting gives me some interesting options for improving my site including server push, HTTPS and in-memory file serving.
                 I wrote my own server that incorporates these features, source available <a href="https://github.com/Charlesworth/websiteServer">here</a>.
             </p>
 
-            <h3>HTTPS for free with Let’s Encrypt:</h3>
+            <h3>HTTPS for free with Let&apos;s Encrypt:</h3>
 
             <p> 
                 The majority of GitHub pages sites still use plain old HTTP, making it easy to snoop in on the traffic between those sites.
                 Adding HTTPS (S for Secure) to your website keeps things between you and your readers private.
-                Modern Browsers will shortly be makeing it more and more visible to users when a site is using “insecure” HTTP, not a good look:
+                Modern Browsers will shortly be making it more and more visible to users when a site is using “insecure” HTTP, not a good look:
             </p>
 
             <img src="../images/self-hosting-1.png" alt="There should be a beautiful picture here, if there isn't then something went wrong."></img>
 
             <p> 
                 Github Pages <a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">offers simple to use HTTPS for github.io domains</a> but not for custom domains.
-                Until recently you had to shell out $ for certificates to enable HTTPS, but now the fantastic <a href="https://letsencrypt.org/">Let’s Encrypt</a> enables you to get them for free.
+                Until recently you had to shell out $ for certificates to enable HTTPS, but now the fantastic <a href="https://letsencrypt.org/">Let&apos;s Encrypt</a> enables you to get them for free.
                 You can even automate the process, in my case I used the <a href="https://godoc.org/golang.org/x/crypto/acme/autocert">Golang autocert package</a> which provides a autocert manager you can load into your server.
             </p>                    
 
@@ -76,7 +79,7 @@
             <h3>In memory static files:</h3>
 
             <p>
-                For a small site like mine, keeping the entire website in memory doesn’t pose a massive problem but does offer increased speed as opposed to accessing the data from a disk or SSD.
+                For a small site like mine, keeping the entire website in memory doesn&apos;t pose a massive problem but does offer increased speed as opposed to accessing the data from a disk or SSD.
                 By keeping all of the text files and pictures in memory, requests can be served that much faster.
             </p>
 

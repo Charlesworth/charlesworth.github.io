@@ -50,6 +50,7 @@ header {
 }
 
 section {
+    background-color: #ffe3c7;
     width: 500px;
     float: right;
     padding-bottom: 50px
@@ -107,4 +108,9 @@ screen and (max-width:480px) {
 
 pre {
     background: #c5c5c5
+}
+
+.boxed {
+    border: 1px solid green;
+    background-color: rgb(191, 226, 191);
 }
